@@ -160,6 +160,7 @@ if mode == 2:
 for i in range(mFlag):
     print(legend)
     print("")
+    print(i)
     selection = int(input("Where would you like to mark?\n"))
     while not selection_correct(selection):
         selection = int(input("The selected input is occupied. Please select a new position\n"))
@@ -171,7 +172,9 @@ for i in range(mFlag):
         print("You have won!!!!!")
         time.sleep(5)
         sys.exit(0)
-    anti_player_move()
+
+    if i != 4:
+        anti_player_move()
 
 print("The game was a tie...")
 time.sleep(5)
