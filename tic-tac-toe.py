@@ -174,3 +174,4 @@ for i in range(mFlag):
     anti_player_move()
 
 print("The game was a tie...")
+time.sleep(5)
